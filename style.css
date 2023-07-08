@@ -19,7 +19,7 @@
 
 #cv-item {
   margin-bottom:4rem;
-  margin-left:20rem;
+  margin-left:12rem;
   text-transform: uppercase;
   text-align:left;
   font-weight:400;
@@ -51,6 +51,7 @@
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+    text-transform:uppercase;
   }
 
 .rightEffect {
@@ -83,7 +84,7 @@
     0% {
       opacity: 0;
       transform: translateX(-50%);
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      text-shadow: -2px 3px 0 rgb(0, 0, 0), 2px -3px 0 rgb(0, 0, 0);
     };
     60% {
       opacity: 0.5;
@@ -92,7 +93,7 @@
     80% {
       transform: none;
       opacity: 1;
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+      text-shadow: 2px -3px 0 rgb(0, 0, 0), -2px 3px 0 rgb(0, 0, 0);
     }
     100% {
       text-shadow: none;
@@ -101,11 +102,28 @@
   
   @keyframes glitch {
     0% {
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      text-shadow: -2px 3px 0 rgb(0, 0, 0), 2px -3px 0 rgb(0, 0, 0);
       transform: translate(var(--glitch-translate));
     }
     2% {
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+      text-shadow: 2px -3px 0 rgb(0, 0, 0), -2px 3px 0 rgb(0, 0, 0);
     }
     4%, 100% {  text-shadow: none; transform: none; }
   }
+
+
+  /* Kontakt */
+
+  #contact {
+    margin-top:4rem;
+  }
+
+  #contact img {
+    width:100px;
+  }
+
+/* Impresssum */
+
+#impressum {
+  margin:2rem;
+}
