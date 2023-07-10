@@ -34,15 +34,15 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#cv">lebenslauf</a>
+              <a class="nav-link active" href="#cv">lebenslauf</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#projects">projekte</a>
+              <a class="nav-link active" href="#projects">projekte</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#contact">kontakt</a>
+              <a class="nav-link active" href="#contact">kontakt</a>
             </li>
 
           </ul>
@@ -51,45 +51,27 @@
   </nav>
   </div>
   <hr>
-
+ 
 <!-- Vorstellungsseite -->
 
   <div class="container containerEffect" id="home">
   
     <div class="stack text-center" style="--stacks: 3;">
-      <span style="--index: 0;">Willkommen</span>
-      <span style="--index: 1;">Willkommen</span>
-      <span style="--index: 2;">Willkommen</span>
-      <!-- <div class="stack text-end" style="--stacks: 3;">
-        <span style="--index: 0;">und</span>
-        <span style="--index: 1;">und</span>
-        <span style="--index: 2;">und</span>
+      <span style="--index: 0;">klar & einfach.</span>
+      <span style="--index: 1;">klar & einfach.</span>
+      <span style="--index: 2;">klar & einfach.</span>
+      <div class="stack text-center" style="--stacks: 3;">
+        <span style="--index: 0;"></span>
+        <span style="--index: 1;"></span>
+        <span style="--index: 2;"></span>
       </div>
-      <div class="stack text-end" style="--stacks: 3;">
-        <span style="--index: 0;">einfach</span>
-        <span style="--index: 1;">einfach</span>
-        <span style="--index: 2;">einfach</span>
-      </div> -->
+      <div class="stack text-center" style="--stacks: 3;">
+        <span style="--index: 0;">Frontend-Entwicklung.</span>
+        <span style="--index: 1;">Frontend-Entwicklung.</span>
+        <span style="--index: 2;">Frontend-Entwicklung.</span>
+      </div>
     </div>
-    
-
-    <!-- <div class="text-start display-6">
-      Ich bin Alexander Hähnlein. 29 Jahre alt. Wohne in Friedrichroda, Thürignen.
-    </div> -->
-    </div>
-
-
-    <figure class="text-end" id="quote">
-      <blockquote class="blockquote">
-        <p>“It’s not a bug. It’s an undocumented feature!”</p>
-      </blockquote>
-      <figcaption class="blockquote-footer"><cite title="Source Title">Anonymous</cite>
-      </figcaption>
-    </figure>
-   
-     
-
-
+  </div>
 <!-- lebenslauf -->
 <hr>
 <div class="container" id="cv">
@@ -101,37 +83,70 @@
   <div id="cv-item" class="cv-item5">2016 &ndash; 2017  <br><b>STUDIUM Germanistik/Psycholgie</b><br><i>Friedrichrich-schiller-universität jena</i></div>
   <div id="cv-item" class="cv-item6">2013 &ndash; 2016  <br><b>Abitur schwerpunkt medien- und gestaltungstechnik</b><br><i>Walter-gropius-schule erfurt</i></div>
 </div>
+
 <hr>
 
 <!-- Projekte -->
 
 <div class="container" id="projects">
-  <div class="display-1 text-center">projekte</div>
-  <div id="projects-item" class="cv-item1">Filmliste</div>
+  <div class="display-1 text-start">projekte</div>
+
+  <div class="card p-5 text-bg-dark border-dark mb-3" style="max-width: 700px;" id="filmlist-box">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/src/img/filmliste.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h1 class="card-title text-center">Fimliste</h1>
+          <p class="card-text">Die Filmliste ist eine Webanwendung, mit welcher man eine persönliche Filmliste erstellen kann. Wenn man unschlüssig ist, welchen Film man gucken möchte, dann kann man sich einen zufälligen Film ausgeben lassen.</p>
+          <p class="card-text"><small class="text-body-secondary">vue.js &bull; JavaScript &bull; HTML &bull; CSS &bull; GitHub</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 <hr>
 <!-- Contact -->
 <div class="container" id="contact">
-<div class="display-1 text-end">kontaktiere mich</div>
+<div class="display-1 text-start">kontakt</div>
 
 
 
       <!-- <a class="btn-email" href="mailto:haehnlein.alexander@gmx.de">
           <button type="button" class="btn btn-primary btn-lg btn btn-outline-light bg-secondary-subtle">E-Brief</button>
-      </a> -->
+      </a>
       <a target="_blank" href="mailto:haehnlein.alexander@gmx.de"><img style="width:100px;"class="rounded  img-fluid" src="./src/img/email.png" alt="Email-icon"></a>
       
         <a target="_blank" href="https://www.xing.com/profile/Alexander_Haehnlein2/cv"><img class="rounded float-center img-fluid" src="./src/img/xing-logo.png" alt="xing-logo"></a>
-      </div>
+      </div> -->
+      
+  </div>
       <hr>
+      
+      
+
 
       <!-- Impressum -->
-      <div class="container float-start" id="impressum">
-        <div class="text-start">&copy; Alexander Haehnlein (2023)</div>
-        <div class="text-center">Impressum</div>
+      <!-- <div class="container float-start text-start" id="impressum">
+        <p class="">&copy;alexander haehnlein (2023)</p>
       </div>
-      
-      
+      <p><a class="link-underline-dark" href="">impressum</a></p> -->
+    
+      <!-- <div class="text-end d-flex justify-content-start">
+        © 2023 Copyright:
+        Alexander Haehnlein
+      </div>
+      <div class="text-start d-flex justify-content-end">
+        © 2023 Copyright:
+        Alexander Haehnlein
+      </div> -->
+      <div class="d-flex" id="footer">
+        <div class="p-2 flex-grow-1"><a class="text-body-emphasis " href="">Impressum</a></div>
+        <div class="p-2 justify-content-center">&copy; 2023 Copyright: Alexander Haehnlein</div>
+      </div>
 
 </body>
+
 </html>
