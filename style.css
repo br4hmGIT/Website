@@ -9,6 +9,28 @@ body {
 #home {
     margin-top:15rem !important;
     margin-bottom:30rem;
+    text-transform:lowercase;
+}
+
+@media (max-width:768px) {
+  #home span {
+    font-size:3rem;
+  }
+}
+
+@media (max-width:480px) {
+  #home span {
+    font-size:2rem;
+    text-align:left !important;
+  }
+  .btn-outline-light {
+    border:0;
+  }
+}
+
+#home .stack {
+  margin-bottom:8rem;
+  
 }
 
 #quote {
