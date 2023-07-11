@@ -1,3 +1,7 @@
+body {
+ 
+}
+
 #nav li {
     margin-left:5rem;
 }
@@ -51,9 +55,9 @@
 
 #cv-item {
   margin-bottom:4rem;
-  margin-left:12rem;
-  text-transform: uppercase;
-  text-align:left;
+  
+  text-transform: lowercase;
+  text-align:center;
   font-weight:400;
   letter-spacing:.2rem;
 }
