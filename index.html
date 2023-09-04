@@ -1,179 +1,163 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Haehnlein</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Haehnlein</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 
-<body class=" text-body-emphasis">
+<body class="text-body-emphasis">
 
   <!-- NAVBAR  -->
-
   <div id="nav">
-    
-      <nav class="navbar navbar-expand-lg fs-3 m-3 font-monospace">
+    <nav class="navbar navbar-expand-lg fs-3 m-3 font-monospace">
       <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-
             <li class="nav-item">
-              <a class="nav-link active" href="#home">home</a>
+              <a class="nav-link active" href="index.html">home</a>
             </li>
-            
             <li class="nav-item">
               <a class="nav-link active" href="#cv">lebenslauf</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link active" href="#projects">projekte</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link active" href="#contact">kontakt</a>
             </li>
-
           </ul>
         </div>
-    </div>
-  </nav>
+      </div>
+    </nav>
   </div>
   <hr>
- 
-<!-- Vorstellungsseite -->
 
+  <!-- Vorstellungsseite -->
   <div class="container containerEffect" id="home">
-  
     <div class="stack text-start" style="--stacks: 3;">
-      <span style="--index: 0;">Hi, ich bin Alexander Haehnlein,</span>
-      <span style="--index: 1;">Hi, ich bin Alexander Haehnlein,</span>
-      <span style="--index: 2;">Hi, ich bin Alexander Haehnlein,</span>
-      <div class="stack text-end" style="--stacks: 3; color:rgb(255, 242, 0);">
+      <span style="--index: 0;">Willkommen.</span>
+      <span style="--index: 1;">Willkommen.</span>
+      <span style="--index: 2;">Willkommen.</span>
+      <div class="stack text-center font-monospace" style="--stacks: 3; color:rgba(255, 242, 0, 0.835);">
+        <span style="--index: 0;">Ich bin Alexander Haehnlein.</span>
+        <span style="--index: 1;">Ich bin Alexander Haehnlein.</span>
+        <span style="--index: 2;">Ich bin Alexander Haehnlein.</span>
+      </div>
+      <div class="stack text-end" style="--stacks: 3;">
         <span style="--index: 0;">Frontend-Entwickler.</span>
         <span style="--index: 1;">Frontend-Entwickler.</span>
         <span style="--index: 2;">Frontend-Entwickler.</span>
       </div>
-      <div class="stack text-center" style="--stacks: 3;">
-        <span style="--index: 0;">& Ich suche eine Werkstudentenstelle</span>
-        <span style="--index: 1;">& Ich suche eine Werkstudentenstelle</span>
-        <span style="--index: 2;">& Ich suche eine Werkstudentenstelle</span>
-      </div>
     </div>
   </div>
 
-<div class="container h1">Ich bin</div>
+  <div id="textMeWrapper">
+    <div class="fs-1 text-center" id="textMe">Mein Name ist Alexander Hähnlein, ich bin 29 Jahre alt und begeistere mich
+      seit geraumer Zeit für die Frontend-Entwicklung. Aktuell bin ich auf der Suche nach einer Werkstudentenstelle als
+      Frontendentwickler.</div>
+  </div>
 
-<!-- lebenslauf -->
+  <!-- Lebenslauf -->
+  <hr>
+  <div class="container" id="cv">
+    <div class="display-1 text-center fw-semibold">lebenslauf</div>
+  </div>
 
-<hr>
-<div class="container" id="cv">
-  <div class="display-1 text-center">lebenslauf</div>
-   </div>
-
-  <!-- card -->
-
-    <div class="container px-4 text-center" id="cv-person">
-      <div class="row gx-5 ">
-        <div class="col">
+  <!-- Card -->
+  <div class="container px-4 text-center" id="cv-person">
+    <div class="row gx-5">
+      <div class="col">
         <div class="p-3 thumb">
           <ul class="list-group border">
             <li class="list-group-item fs-2 text-center">Alexander Haehnlein, 29</li>
-            <hr>
-            <li class="list-group-item fs-1 text-center">Fontend-Entwickler</li>
-            <li class="list-group-item fs-5 text"><i>vue.js &bull; JavaScript &bull; Bootstrap &bull;  HTML &bull; CSS &bull; GitHub </i></li>
+            <li class="list-group-item fs-1 text-center">Frontend-Entwickler</li>
+            <li class="list-group-item fs-5 text text-center">
+              <i>React &bull; JavaScript &bull; Bootstrap &bull; HTML &bull; CSS &bull; GitHub </i>
+            </li>
             <li class="list-group-item fs-4 text"></li>
-            <li class="list-group-item fs-5 text text-center">haehnlein.alexander@gmx.de </li>
+            <li class="list-group-item fs-5 text text-center">haehnlein.alexander@gmx.de</li>
           </ul>
         </div>
-        </div>
-        <div class="col">
-          <div class="p-3" id=""><img src="./src/img/me2.png" alt="Portrait"></div>
-
-        </div>
       </div>
-    </div>
-
-    
-      
-
-
-
-
-    <!-- end-card -->
-
-    
-  <div class="container">
-   <div id="cv-item" class="cv-item1">seit 2023 <br><b> Studium Informatik B.Sc.</b><br><i>Fernuniversität Hagen</i></div>
-  <div id="cv-item" class="cv-item2">seit 2020  <br><b>Allrounder ferienwohnungen</b><br><i>Villa Warzenburg Friedrichroda</i></div>
-  <div id="cv-item" class="cv-item3">2018 &ndash; 2019  <br><b>Studium Medienkultur</b><br><i>Bauhaus-universität-weimar</i></div>
-  <div id="cv-item" class="cv-item4">2017 &ndash; 2018  <br><b>Stagehand</b><br><i>Lets Work GmbH Würzburg</i></div>
-  <div id="cv-item" class="cv-item5">2016 &ndash; 2017  <br><b>STUDIUM Germanistik/Psycholgie</b><br><i>Friedrichrich-schiller-universität jena</i></div>
-  <div id="cv-item" class="cv-item6">2013 &ndash; 2016  <br><b>Abitur schwerpunkt medien- und gestaltungstechnik</b><br><i>Walter-gropius-schule erfurt</i></div>
-</div>
-
-<hr>
-
-<!-- Projekte -->
-
-<div class="container" id="projects">
-  <div class="display-1 text-center">projekte</div>
-
-  <div class="card p-5  border-dark mb-3" style="max-width: 700px;" id="filmlist-box">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="/src/img/filmliste.png" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h1 class="card-title text-center">Filmliste</h1>
-          <p class="card-text">Die Filmliste ist eine Webanwendung, mit welcher man eine persönliche Filmliste erstellen kann. Wenn man unschlüssig ist, welchen Film man gucken möchte, dann kann man sich einen zufälligen Film ausgeben lassen.</p>
-          <p class="card-text"><small class="text-body-secondary">vue.js &bull; JavaScript &bull; HTML &bull; CSS &bull; GitHub</small></p>
-        </div>
+      <div class="col">
+        <div class="p-3" id=""><img src="./src/img/me2.png" alt="Portrait"></div>
       </div>
     </div>
   </div>
-</div>
+  <!-- End-Card -->
+  
+  <div class="container">
+    <div id="cv-item" class="cv-item1">seit 2023 <br><b> Studium Informatik B.Sc.</b><br><i>Fernuniversität Hagen</i></div>
+    <div id="cv-item" class="cv-item2">seit 2020 <br><b>Allrounder ferienwohnungen</b><br><i>Villa Warzenburg Friedrichroda</i></div>
+    <div id="cv-item" class="cv-item3">2018 &ndash; 2019 <br><b>Studium Medienkultur</b><br><i>Bauhaus-universität-weimar</i></div>
+    <div id="cv-item" class="cv-item4">2017 &ndash; 2018 <br><b>Stagehand</b><br><i>Lets Work GmbH Würzburg</i></div>
+    <div id="cv-item" class="cv-item5">2016 &ndash; 2017 <br><b>STUDIUM Germanistik/Psycholgie</b><br><i>Friedrichrich-schiller-universität jena</i></div>
+    <div id="cv-item" class="cv-item6">2013 &ndash; 2016 <br><b>Abitur schwerpunkt medien- und gestaltungstechnik</b><br><i>Walter-gropius-schule erfurt</i></div>
+  </div>
 
-<hr>
-<!-- Contact -->
-<div class="container" id="contact">
-<div class="display-1 text-center">kontakt</div>
+  <hr>
 
+  <!-- Projekte -->
+  <div class="container" id="projects">
+    <div class="display-1 text-center fw-semibold">projekte</div>
 
-<div class="text-center">
+    <a href="./projectInWork.html">
+      <div class="card p-5  border-dark mb-3" style="max-width: 700px;" id="filmlist-box">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./src/img/filmliste.png" class="img-fluid rounded-start" alt="Filmlist">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title text-center">Filmliste</h1>
+              <p class="card-text">Die Filmliste ist eine Webanwendung, mit welcher man eine persönliche Filmliste
+                erstellen kann. Wenn man unschlüssig ist, welchen Film man gucken möchte, dann kann man sich einen
+                zufälligen Film ausgeben lassen.</p>
+              <p class="card-text"><small>HTML &bull; CSS &bull; JavaScript &bull; React
+                  &bull; GitHub</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <hr>
+
+  <!-- Kontakt -->
+  <div class="container" id="contact">
+    <div class="display-1 text-center">kontakt</div>
+
+    <div class="text-center">
       <a class="btn-email" href="mailto:haehnlein.alexander@gmx.de">
-          <button type="button" id="contact-btn" class="btn btn-primary btn-lg btn btn-outline-light bg-secondary-subtle">e-mail schreiben</button>
+        <button type="button" id="contact-btn" class="btn btn-primary btn-lg btn btn-outline-light bg-secondary-subtle">e-mail schreiben</button>
       </a>
-  </div>   
-  <div class="text-center">
-        <a target="_blank" href="https://www.xing.com/profile/Alexander_Haehnlein2/cv"><img class="rounded float-center img-fluid" src="./src/img/xing-logo.png" alt="xing-logo"></a>
-      </div>
-      </div>
-      
+    </div>
+    <div class="text-center">
+      <a target="_blank" href="https://www.xing.com/profile/Alexander_Haehnlein2/cv"><img class="rounded float-center img-fluid" src="./src/img/xing-logo.png" alt="xing-logo"></a>
+    </div>
+  </div>
 
-      <hr>
-      
-      
+  <hr>
 
-
-      <!-- Impressum -->
-      
-      <div class="d-flex" id="footer">
-        <div class="p-2 flex-grow-1"><a class="text-body-emphasis " href="/impressum.html">Impressum</a></div>
-        <div class="p-2 justify-content-center">&copy; 2023 Copyright: Alexander Haehnlein</div>
-      </div>
+  <!-- Impressum -->
+  <div class="d-flex" id="footer">
+    <div class="p-2 flex-grow-1"><a class="text-body-emphasis" href="impressum.html">Impressum</a> | <a class="text-body-emphasis" href="datenschutz.html">Datenschutz</a></div>
+    <div class="p-2 justify-content-center">&copy; 2023 Copyright: Alexander Haehnlein</div>
+  </div>
 
 </body>
 
