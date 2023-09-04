@@ -1,15 +1,17 @@
 body {
+ background-color:rgba(0, 0, 0, 0.752);
  
 }
 
 #nav li {
-    margin-left:5rem;
+    margin-left:4rem;
 }
 
 #home {
     margin-top:15rem !important;
-    margin-bottom:30rem;
+    margin-bottom:20rem;
     text-transform:lowercase;
+    
 }
 
 @media (max-width:768px) {
@@ -33,10 +35,7 @@ body {
   
 }
 
-#quote {
-    margin-right:7rem;
-    margin-bottom:28rem;
-}
+
 
 /* CV */
 
@@ -50,34 +49,62 @@ body {
 }
 
 #cv-person {
-  margin-bottom:7rem;
+  margin-bottom:15rem;
 }
 
 #cv-person ul {
-  border:solid white 1px !important;
+  background-color:#161719;
   border:0 !important;
   border-radius:0;
   margin-top:8rem;
-  padding:1rem;
-  box-shadow: 5px 5px 25px 5px #000000;
+  padding:2rem;
+  box-shadow: 5px 5px 25px 5px #00000050;
+  
 }
 
 
 #cv-person li {
- 
- 
   font-size:2rem;
   text-align:start;
   border:0;
   border-radius:0;
   background-color:#161719 !important;
   color:white !important;
+  
+}
+
+#cv-person img {
 
 }
 
-#cv-item {
-  margin-bottom:4rem;
+
+.thumb { 
+  height: 300px;
+  perspective: 800px;
   
+}
+
+.thumb ul {
+  
+  transform: rotateX(60deg) rotateY(0deg) ;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transition: all 0.6s;
+}
+
+.thumb:hover ul {
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-origin: bottom;
+}
+
+/* Card Flip */
+
+
+
+/* cv list */
+
+#cv-item {
+  margin-bottom:8rem;
   text-transform: lowercase;
   text-align:center;
   font-weight:400;
@@ -85,8 +112,11 @@ body {
 }
 
 .cv-item1 {
-   font-size:1.7rem;
-    
+   font-size:2rem;   
+}
+
+.cv-item2, .cv-item3, .cv-item4, .cv-item5, .cv-item6 {
+  font-size:1.2rem;
 }
 
 #cv .h1 {
@@ -113,6 +143,11 @@ body {
     margin-left:20rem;
 }
 
+#filmlist-box {
+  border-radius:0px;
+  border:0;
+  background-color:rgba(0, 0, 0, 0.752);
+}
 
 #filmlist-box:hover {
 	transform: scale(110%);
