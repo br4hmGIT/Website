@@ -244,10 +244,7 @@ body {
   margin-top: 7rem;
 }
 
-#projects-item {
-  text-transform: uppercase;
-  margin-left: 20rem;
-}
+
 
 #project1 {
   border-radius: 5px;
@@ -257,15 +254,16 @@ body {
   box-shadow: 5px 15px 15px 15px rgba(0, 0, 0, 0.278);
   background-image: url(./src/img/project1.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   max-width: 100% !important;
   min-height: 50vh !important;
   opacity:.7;
-  transition: all 0.4s;
+  transition: all 0.3s ease-in-out;
+  
 }
 
-#project1:hover, #project2:hover {
-  transform: scale(104%);
+#project1:hover, #project2:hover{
+  transform: scale(102%);
   opacity: 1;
 }
 
@@ -276,21 +274,34 @@ body {
   border: 0;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 5px 15px 15px 15px rgba(0, 0, 0, 0.278);
-  background-image: url(./src/img/project1.png);
+  background-image: url(./src/img/project2.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   max-width: 100% !important;
   min-height: 50vh !important;
-  opacity:.9;
+  opacity:.7;
   transition: all 0.4s;
+ 
 }
 
 
 #projects a {
   text-decoration: none;
   color: white;
+  
 }
 
+#project-text {
+  margin-top: 3rem;
+  margin-bottom:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  border-top:1px solid white;
+
+  padding-top:1rem;
+}
 
 
 /* Effekt */
