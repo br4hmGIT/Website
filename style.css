@@ -1,16 +1,35 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Globale Stile */
-html {
-  
-}
+
 
 body {
-  background: linear-gradient(135deg, #11100e 10%, #de8362 100%);
-  text-transform:lowercase !important;
+  background: linear-gradient(235deg, #11100e 20%, #090915 100%);
+  font-family: 'Ubuntu';
 }
 
 /* Navigation */
+
+#nav {
+  position:sticky;
+  top:0;
+}
+
+/* ON SCROLL NAV Vertikal anordnen */
+
 #nav li {
-  margin-left: 4rem;
+  margin-left: 4rem; 
+  transition: all .2s ease-in-out;
+  opacity: .5;
+}
+
+#nav li:hover {
+  opacity: 1;
+}
+
+#nav li:active {
+  transform: scale(97%);
 }
 
 /* Vorstellungsseite */
@@ -60,6 +79,8 @@ body {
     font-size: 1.5rem !important;
   }
 }
+
+
 /* Lebenslauf */
 #cv {
   margin-bottom: 10rem;
@@ -72,24 +93,66 @@ body {
 
 #cv-person {
   margin-bottom: 15rem;
+  
 }
 
 #cv-person ul {
-  background-color: rgba(0, 0, 0, 0.229);
+  background-color: transparent;
   border: 0 !important;
-  border-radius: 0;
-  margin-top: 8rem;
+  border-radius: 20px;
+  margin-top: 5rem;
   padding: 2rem;
   box-shadow: 5px 5px 25px 5px #00000050;
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#cv-person ul:hover {
+  background-color:rgba(255, 255, 255, 0.006);
+}
 #cv-person li {
   font-size: 2rem;
   text-align: start;
   border: 0;
   border-radius: 0;
   background-color: #b38b3c00;
-  color: white !important;
+  color: white;
+  
+}
+
+#github-mail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5rem;
+}
+
+#githubLink img {
+  width:30%;
+  transition: all .2s ease-in-out;
+  margin-top:1rem;
+  padding:1rem;
+  background-color: transparent;
+  padding-bottom:2rem;
+  opacity: .7;
+  width: 100%;
+}
+
+#githubLink img:hover {
+  opacity: 1;
+}
+#cv-person a {
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  display:inline-block;
+  width:30%;
+  
+}
+
+#cv-person a:hover{
+  transform: scale(103%);
+  text-decoration: underline;
 }
 .thumb { 
   height: auto;
@@ -98,8 +161,7 @@ body {
 }
 
 .thumb ul {
-  
-  transform: rotateX(60deg) rotateY(0deg) ;
+  transform: rotateX(0deg) rotateY(0deg) ;
   transform-origin: bottom;
   transform-style: preserve-3d;
   transition: all 0.6s;
@@ -113,9 +175,11 @@ body {
 #cv-person img {
   max-width:400px; 
   
-  
-  
+}
 
+#portrait img {
+  border-radius: 10%;
+  filter: contrast(1.5) drop-shadow(5px 5px 3px rgba(0,0,0,0.7));;
 }
 
 @media (max-width:1200px) {
@@ -136,7 +200,7 @@ body {
 
 
 @media (max-width:570px) {
-  #cv-person img {
+  #portrait {
    display:none;
   }
   .thumb ul {
@@ -185,24 +249,49 @@ body {
   margin-left: 20rem;
 }
 
-#filmlist-box {
-  border-radius: 10px;
+#project1 {
+  border-radius: 5px;
   color:white !important;
   border: 0;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 5px 15px 15px 15px rgba(0, 0, 0, 0.278);
+  background-image: url(./src/img/project1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100% !important;
+  min-height: 50vh !important;
+  opacity:.7;
+  transition: all 0.4s;
 }
 
-#filmlist-box:hover {
+#project1:hover, #project2:hover {
   transform: scale(104%);
-  transition: all 0.4s;
-  cursor: pointer;
+  opacity: 1;
 }
+
+
+#project2 {
+  border-radius: 5px;
+  color:white !important;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 15px 15px 15px rgba(0, 0, 0, 0.278);
+  background-image: url(./src/img/project1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100% !important;
+  min-height: 50vh !important;
+  opacity:.9;
+  transition: all 0.4s;
+}
+
 
 #projects a {
   text-decoration: none;
   color: white;
 }
+
+
 
 /* Effekt */
 .containerEffect {
